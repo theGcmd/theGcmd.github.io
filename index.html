@@ -603,6 +603,7 @@
     <a href="#architecture">Architecture</a>
     <a href="#energy">Energy</a>
     <a href="#about">About</a>
+    <a href="#mnemos">Mnemos</a>
     <a href="./demo.html" style="color:var(--accent2)">Live Demo</a><a href="mailto:gustavgausepohl@gmail.com">Contact</a>
   </div>
 </nav>
@@ -632,6 +633,10 @@
 <div class="ticker-wrap">
   <div class="ticker">
     <div class="ticker-item">Split-MNIST accuracy <span class="val">98.2%</span></div>
+    <div class="ticker-item">Mnemos streams monitored <span class="val">100,000</span></div>
+    <div class="ticker-item">Mnemos global brain F1 <span class="val">0.989</span></div>
+    <div class="ticker-item">Mnemos precision <span class="val">1.000</span></div>
+    <div class="ticker-item">Mnemos SNNs running <span class="val">111,111</span></div>
     <div class="ticker-item">Beat EWC by <span class="val">32.7%</span></div>
     <div class="ticker-item">Energy vs MLP <span class="val">1298x</span> more efficient</div>
     <div class="ticker-item">Spike sparsity <span class="val">99.6%</span></div>
@@ -643,6 +648,10 @@
     <div class="ticker-item">Task labels required <span class="val">0</span></div>
     <!-- repeat for seamless loop -->
     <div class="ticker-item">Split-MNIST accuracy <span class="val">98.2%</span></div>
+    <div class="ticker-item">Mnemos streams monitored <span class="val">100,000</span></div>
+    <div class="ticker-item">Mnemos global brain F1 <span class="val">0.989</span></div>
+    <div class="ticker-item">Mnemos precision <span class="val">1.000</span></div>
+    <div class="ticker-item">Mnemos SNNs running <span class="val">111,111</span></div>
     <div class="ticker-item">Beat EWC by <span class="val">32.7%</span></div>
     <div class="ticker-item">Energy vs MLP <span class="val">1298x</span> more efficient</div>
     <div class="ticker-item">Spike sparsity <span class="val">99.6%</span></div>
@@ -988,6 +997,112 @@
     drawSpikes();
   });
 </script>
+
+
+<!-- ── Mnemos Section ── -->
+<section id="mnemos" style="padding:6rem 1.5rem; position:relative; z-index:1;">
+  <div style="max-width:1100px; margin:0 auto;">
+
+    <div style="font-family:var(--mono); font-size:0.75rem; color:var(--accent2); letter-spacing:0.15em; margin-bottom:1rem;">// 05 — Mnemos</div>
+    <h2 style="font-family:var(--sans); font-size:clamp(1.8rem,4vw,2.8rem); font-weight:800; margin-bottom:1rem;">
+      Hierarchical intelligence at scale.
+    </h2>
+    <p style="color:var(--muted); max-width:640px; line-height:1.7; margin-bottom:3rem; font-size:1.05rem;">
+      Mnemos is a neuromorphic intelligence system built on the same SNN foundations.
+      Instead of one large model, it coordinates millions of tiny cheap specialists through a self-organising hierarchy.
+      Each level sees patterns the level below cannot. The intelligence compounds.
+    </p>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; margin-bottom:3rem;">
+      <div class="stat-card">
+        <div class="stat-num cyan">100,000</div>
+        <div class="stat-label">Streams monitored<br>simultaneously</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num green">0.989</div>
+        <div class="stat-label">F1 score<br>global brain</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num amber">1.000</div>
+        <div class="stat-label">Precision<br>zero false alarms</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num blue">111,111</div>
+        <div class="stat-label">SNNs running<br>in parallel</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num green">6</div>
+        <div class="stat-label">Hierarchy levels<br>each one smarter</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num cyan">692s</div>
+        <div class="stat-label">Runtime on laptop<br>no GPU needed</div>
+      </div>
+    </div>
+
+    <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:2rem; margin-bottom:2rem;">
+      <div style="font-family:var(--mono); font-size:0.75rem; color:var(--muted); margin-bottom:1rem;">Scale progression</div>
+      <table style="width:100%; border-collapse:collapse; font-family:var(--mono); font-size:0.85rem;">
+        <thead>
+          <tr style="color:var(--muted); border-bottom:1px solid var(--border);">
+            <th style="text-align:left; padding:0.5rem 1rem 0.5rem 0;">Levels</th>
+            <th style="text-align:right; padding:0.5rem;">Streams</th>
+            <th style="text-align:right; padding:0.5rem;">F1</th>
+            <th style="text-align:right; padding:0.5rem;">Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:0.6rem 1rem 0.6rem 0; color:var(--text);">2 levels</td>
+            <td style="text-align:right; padding:0.6rem 0.5rem; color:var(--muted);">1,000</td>
+            <td style="text-align:right; padding:0.6rem 0.5rem; color:var(--accent3);">0.893</td>
+            <td style="text-align:right; padding:0.6rem 0.5rem; color:var(--muted);">12s</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:0.6rem 1rem 0.6rem 0; color:var(--text);">3 levels</td>
+            <td style="text-align:right; padding:0.6rem 0.5rem; color:var(--muted);">1,000</td>
+            <td style="text-align:right; padding:0.6rem 0.5rem; color:var(--accent3);">0.935</td>
+            <td style="text-align:right; padding:0.6rem 0.5rem; color:var(--muted);">12s</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:0.6rem 1rem 0.6rem 0; color:var(--text);">4 levels</td>
+            <td style="text-align:right; padding:0.6rem 0.5rem; color:var(--muted);">1,000</td>
+            <td style="text-align:right; padding:0.6rem 0.5rem; color:var(--accent3);">0.917</td>
+            <td style="text-align:right; padding:0.6rem 0.5rem; color:var(--muted);">12s</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:0.6rem 1rem 0.6rem 0; color:var(--text);">5 levels</td>
+            <td style="text-align:right; padding:0.6rem 0.5rem; color:var(--muted);">10,000</td>
+            <td style="text-align:right; padding:0.6rem 0.5rem; color:var(--accent3);">0.984</td>
+            <td style="text-align:right; padding:0.6rem 0.5rem; color:var(--muted);">123s</td>
+          </tr>
+          <tr>
+            <td style="padding:0.6rem 1rem 0.6rem 0; color:var(--accent2); font-weight:700;">6 levels</td>
+            <td style="text-align:right; padding:0.6rem 0.5rem; color:var(--accent2); font-weight:700;">100,000</td>
+            <td style="text-align:right; padding:0.6rem 0.5rem; color:var(--accent3); font-weight:700;">0.989</td>
+            <td style="text-align:right; padding:0.6rem 0.5rem; color:var(--accent2); font-weight:700;">692s</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:2rem;">
+      <div style="font-family:var(--mono); font-size:0.75rem; color:var(--muted); margin-bottom:1rem;">Architecture</div>
+      <div style="font-family:var(--mono); font-size:0.82rem; color:var(--text); line-height:2; white-space:pre;">Level 6  Global brain         1 gateway watching all regions
+Level 5  Region gateways       10 gateways, one per region
+Level 4  Datacentre gateways   100 gateways, one per DC
+Level 3  Rack gateways         1,000 gateways, one per rack
+Level 2  Server detectors      10,000 detectors, one per server
+Level 1  Stream watchers       100,000 SNNs, one per sensor</div>
+      <div style="margin-top:1.5rem; color:var(--muted); font-size:0.9rem; line-height:1.7;">
+        Routing weights are learned via Hebbian updates. No routing rules are hardcoded anywhere.
+        The gateway learns which specialists to trust through experience, the same way the brain does.
+        Code is private. Contact for access.
+      </div>
+    </div>
+
+  </div>
+</section>
 
 </body>
 </html>
